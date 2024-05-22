@@ -1,0 +1,51 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-text: #222448;
+  --slidev-theme-accent: #0060CC;
+  --slidev-theme-danger: #C2362B;
+}
+
+.slidev-layout {
+  padding: 1.5rem 2.5rem;
+  background-color: #fff;
+  color: var(--slidev-theme-text)
+}
+
+.slidev-layout.cover {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+  }
+
+  h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+}
+
+.slidev-layout.bullets {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-2xl fw-700;
+    color: var(--slidev-theme-text);
+  }
+}
+
+strong.danger {
+  @apply fw-700;
+  color: var(--slidev-theme-danger);
+}
+
+strong.accent {
+  @apply fw-700;
+  font-weight: bold;
+  color: var(--slidev-theme-accent);
+}
