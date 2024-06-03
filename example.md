@@ -17,7 +17,6 @@ Presentation slides for developers
 layout: content
 headerEnable: true
 headerTitle: What is Slidev?
-headerLogo: https://sli.dev/logo-title.png
 ---
 
 # What is Slidev?
@@ -34,6 +33,18 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 
 <br>
 <br>
+
+Read more about [Why Slidev?](https://sli.dev/guide/why)
+
+---
+layout: center
+headerEnable: true
+headerTitle: What is Slidev?
+---
+
+# Slidev
+
+Slidev is a slides maker and presenter designed for developers, consist of the following features
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 

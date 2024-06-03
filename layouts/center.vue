@@ -1,10 +1,12 @@
 <template>
-  <div class="slidev-layout content">
+  <div class="slidev-layout center">
     <div class="header" v-if="headerEnable">
       <p>{{ headerTitle }}</p>
       <img :src="headerLogo" alt="logo" v-if="headerLogo" />
     </div>
-    <slot />
+    <div class="container">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -17,16 +19,29 @@ const props = defineProps({
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
-.slidev-layout.content {
+.slidev-layout.center {
+  position: relative;
   @apply h-full;
 
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
   h1 {
-    @apply text-2xl fw-700;
+    @apply text-4xl fw-700;
     color: var(--slidev-theme-text);
     margin: 0;
-    line-height: 1;
+  }
+
+  p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
   }
   
   .header {
@@ -35,7 +50,7 @@ const props = defineProps({
     justify-content: space-between;
     width: 100%;
     height: 1.7rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     border-bottom: 0.5px solid #8FA7CA70;
 
     p {
@@ -50,12 +65,6 @@ const props = defineProps({
       display: block;
       height: 1.3em;
     }
-  }
-
-  h1 {
-    font-family: "Do Hyeon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
 }
 </style>
