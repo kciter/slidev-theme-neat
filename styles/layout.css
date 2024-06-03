@@ -9,7 +9,11 @@
 .slidev-layout {
   padding: 1.5rem 2.5rem;
   background-color: #fff;
-  color: var(--slidev-theme-text)
+  color: var(--slidev-theme-text);
+
+  a:hover {
+    color: var(--slidev-theme-accent);
+  }
 }
 
 .slidev-layout.cover {
@@ -27,15 +31,6 @@
   ul + h2,
   table + h2 {
     @apply mt-10;
-  }
-}
-
-.slidev-layout.bullets {
-  @apply h-full grid;
-
-  h1 {
-    @apply text-2xl fw-700;
-    color: var(--slidev-theme-text);
   }
 }
 

@@ -14,8 +14,10 @@ Presentation slides for developers
 </div>
 
 ---
-layout: bullets
-headerLeft: What is Slidev?
+layout: content
+headerEnable: true
+headerTitle: What is Slidev?
+headerLogo: https://sli.dev/logo-title.png
 ---
 
 # What is Slidev?
