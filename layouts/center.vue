@@ -12,9 +12,6 @@ import Default from '../layouts/default.vue'
 
 <style>
 .slidev-layout.center {
-  position: relative;
-  @apply h-full;
-
   .container {
     position: absolute;
     top: 50%;
