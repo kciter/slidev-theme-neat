@@ -1,6 +1,7 @@
 ---
 theme: ./
 layout: cover
+image: ./background.png
 ---
 
 # Slidev Theme Starter
@@ -35,6 +36,8 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 - 🎥 **Recording** - built-in recording and camera view
 - 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
 - 🛠 **Hackable** - anything possible on a webpage
+
+<Image src="https://images.unsplash.com/photo-1717402779245-7f6ad2290ec7?q=80&w=4016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100px" width="100px" caption="Test" />
 
 <br>
 <br>
