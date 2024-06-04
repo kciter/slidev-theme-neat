@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 :root {
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
   --slidev-theme-text: #222448;
   --slidev-theme-accent: #0060CC;
   --slidev-theme-danger: #C2362B;
-  --slidev-theme-divider: #f2f4f8;
+  --slidev-theme-border: #f2f4f8;
 }
 
 .slidev-layout {
@@ -12,12 +14,18 @@
   background-color: #fff;
   color: var(--slidev-theme-text);
 
+  h1 {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   a:hover {
     color: var(--slidev-theme-accent);
   }
 
   hr {
-    border-color: var(--slidev-theme-divider);
+    border-color: var(--slidev-theme-border);
   }
 }
 

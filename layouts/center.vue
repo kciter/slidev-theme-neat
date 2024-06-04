@@ -1,21 +1,13 @@
 <template>
-  <div class="slidev-layout center">
-    <div class="header" v-if="headerEnable">
-      <p>{{ headerTitle }}</p>
-      <img :src="headerLogo" alt="logo" v-if="headerLogo" />
-    </div>
+  <default class="center">
     <div class="container">
       <slot />
     </div>
-  </div>
+  </default>
 </template>
 
 <script setup>
-const props = defineProps({
-  headerEnable: Boolean,
-  headerTitle: String,
-  headerLogo: String,
-});
+import Default from '../layouts/default.vue'
 </script>
 
 <style>
@@ -42,29 +34,6 @@ const props = defineProps({
   p {
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 1.7rem;
-    margin-bottom: 0.8rem;
-    border-bottom: 0.5px solid #8FA7CA70;
-
-    p {
-      display: block;
-      margin: 0;
-      padding: 0;
-      font-size: 0.7rem;
-      font-weight: bold;
-    }
-
-    img {
-      display: block;
-      height: 1.3em;
-    }
   }
 }
 </style>

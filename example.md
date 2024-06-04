@@ -15,9 +15,8 @@ Presentation slides for developers
 
 ---
 layout: section
+subject: What is Slidev?
 ---
-
-What is Slidev
 
 ---
 layout: default

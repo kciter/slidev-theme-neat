@@ -5,7 +5,7 @@
       <img :src="headerLogo" alt="logo" v-if="headerLogo" />
     </div>
     <h1 class="title">
-      <slot />
+      {{ subject }}
     </h1>
   </div>
 </template>
@@ -15,6 +15,7 @@ const props = defineProps({
   headerEnable: Boolean,
   headerTitle: String,
   headerLogo: String,
+  subject: String,
 });
 </script>
 
