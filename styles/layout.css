@@ -4,6 +4,7 @@
   --slidev-theme-text: #222448;
   --slidev-theme-accent: #0060CC;
   --slidev-theme-danger: #C2362B;
+  --slidev-theme-divider: #f2f4f8;
 }
 
 .slidev-layout {
@@ -14,23 +15,9 @@
   a:hover {
     color: var(--slidev-theme-accent);
   }
-}
 
-.slidev-layout.cover {
-  @apply h-full grid;
-
-  h1 {
-    @apply text-6xl leading-20;
-  }
-
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
-
-  p + h2,
-  ul + h2,
-  table + h2 {
-    @apply mt-10;
+  hr {
+    border-color: var(--slidev-theme-divider);
   }
 }
 

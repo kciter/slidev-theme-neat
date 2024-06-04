@@ -14,7 +14,13 @@ Presentation slides for developers
 </div>
 
 ---
-layout: content
+layout: section
+---
+
+What is Slidev
+
+---
+layout: default
 headerEnable: true
 headerTitle: What is Slidev?
 ---
@@ -33,6 +39,8 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 
 <br>
 <br>
+
+- - -
 
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 

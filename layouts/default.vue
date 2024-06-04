@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout content">
+  <div class="slidev-layout default">
     <div class="header" v-if="headerEnable">
       <p>{{ headerTitle }}</p>
       <img :src="headerLogo" alt="logo" v-if="headerLogo" />
@@ -19,7 +19,7 @@ const props = defineProps({
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
-.slidev-layout.content {
+.slidev-layout.default {
   @apply h-full;
 
   h1 {
