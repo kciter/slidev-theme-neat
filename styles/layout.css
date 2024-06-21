@@ -1,33 +1,84 @@
 :root {
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-text: #222448;
-  --slidev-theme-accent: #0060CC;
-  --slidev-theme-danger: #C2362B;
-  --slidev-theme-divider: #f2f4f8;
+
+  /* light theme color */
+  --slidev-theme-light-background: white;
+  --slidev-theme-light-text: #222448;
+  --slidev-theme-light-accent: #0060CC;
+  --slidev-theme-light-danger: #C2362B;
+  --slidev-theme-light-divider: #8FA7CA70;
+
+  /* dark theme color */
+  --slidev-theme-dark-background: #222;
+  --slidev-theme-dark-text: white;
+  --slidev-theme-dark-accent: #40A0FC;
+  --slidev-theme-dark-danger: #E96158;
+  --slidev-theme-dark-divider: #e2e4e8;
+}
+
+html:not(.dark) {
+  .slidev-layout {
+    background-color: var(--slidev-theme-light-background);
+    color: var(--slidev-theme-light-text);
+  
+    a:hover {
+      color: var(--slidev-theme-light-accent);
+    }
+  
+    hr {
+      border-width: 0.5px;
+      border-color: var(--slidev-theme-light-divider);
+    }
+  }
+
+
+  strong.danger {
+    color: var(--slidev-theme-light-danger);
+  }
+
+  strong.accent {
+    color: var(--slidev-theme-light-accent);
+  }
+}
+
+html.dark {
+  .slidev-layout {
+    background-color: var(--slidev-theme-dark-background);
+    color: var(--slidev-theme-dark-text);
+  
+    a:hover {
+      color: var(--slidev-theme-dark-accent);
+    }
+  
+    hr {
+      border-color: var(--slidev-theme-dark-divider);
+    }
+  }
+
+  strong.danger {
+    color: var(--slidev-theme-dark-danger);
+  }
+  
+  strong.accent {
+    font-weight: bold;
+    color: var(--slidev-theme-dark-accent);
+  }  
 }
 
 .slidev-layout {
   padding: 1.5rem 2.5rem;
-  background-color: #fff;
-  color: var(--slidev-theme-text);
-
-  a:hover {
-    color: var(--slidev-theme-accent);
-  }
-
+  
   hr {
-    border-color: var(--slidev-theme-divider);
+    border-width: 0.5px;
   }
 }
 
 strong.danger {
   @apply fw-700;
-  color: var(--slidev-theme-danger);
 }
 
 strong.accent {
   @apply fw-700;
   font-weight: bold;
-  color: var(--slidev-theme-accent);
 }

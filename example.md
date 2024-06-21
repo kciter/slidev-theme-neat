@@ -1,6 +1,7 @@
 ---
 theme: ./
 layout: cover
+colorSchema: dark
 ---
 
 # Slidev Theme Starter
@@ -23,6 +24,7 @@ What is Slidev
 layout: default
 headerEnable: true
 headerTitle: What is Slidev?
+colorSchema: dark
 ---
 
 # What is Slidev?
