@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 :root {
   /* default theme color */
   /* can be overrided by uses `themeConfig` option */
@@ -63,14 +65,27 @@ html.dark {
   strong.accent {
     font-weight: bold;
     color: var(--slidev-theme-dark-accent);
-  }  
+  }
 }
 
 .slidev-layout {
   padding: 1.5rem 2.5rem;
-  
+  background-color: #fff;
+  color: var(--slidev-theme-text);
+
+  h1 {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  a:hover {
+    color: var(--slidev-theme-accent);
+  }
+
   hr {
     border-width: 0.5px;
+    border-color: var(--slidev-theme-border);
   }
 }
 

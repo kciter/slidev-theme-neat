@@ -17,15 +17,11 @@ const props = defineProps({
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
 .slidev-layout.default {
   @apply h-full;
 
   h1 {
     @apply text-2xl fw-700;
-    color: var(--slidev-theme-text);
-    margin: 0;
     line-height: 1;
   }
   
@@ -50,12 +46,6 @@ const props = defineProps({
       display: block;
       height: 1.3em;
     }
-  }
-
-  h1 {
-    font-family: "Do Hyeon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
 }
 </style>
