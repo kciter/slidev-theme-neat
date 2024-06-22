@@ -1,6 +1,6 @@
 ---
 theme: ./
-layout: cover
+layout: intro
 colorSchema: dark
 ---
 
