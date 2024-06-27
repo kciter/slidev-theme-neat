@@ -4,7 +4,9 @@
       <p>{{ headerTitle }}</p>
       <img :src="headerLogo" alt="logo" v-if="headerLogo" />
     </div>
-    <slot />
+    <div class="content">
+      <slot />
+    </div>
   </div>
 </template>
 
@@ -21,7 +23,27 @@ const props = defineProps({
   @apply h-full;
 
   h1 {
-    @apply text-2xl fw-700;
+    @apply text-2xl;
+    line-height: 1;
+  }
+
+  h2 {
+    @apply text-xl;
+    line-height: 1;
+  }
+
+  h3 {
+    @apply text-lg;
+    line-height: 1;
+  }
+
+  h4 {
+    @apply text-base;
+    line-height: 1;
+  }
+
+  h5 {
+    @apply text-sm;
     line-height: 1;
   }
   
@@ -30,9 +52,9 @@ const props = defineProps({
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 1.7rem;
+    height: 24px;
     margin-bottom: 1.2rem;
-    border-bottom: 0.5px solid #8FA7CA70;
+    border-bottom: 0.5px solid var(--slidev-theme-light-divider);
 
     p {
       display: block;
@@ -44,7 +66,18 @@ const props = defineProps({
 
     img {
       display: block;
-      height: 1.3em;
+      height: 0.6em;
+    }
+  }
+
+  .content {
+    @apply h-full;
+  }
+}
+html.dark {
+  .slidev-layout.default {
+    .header {
+      border-bottom: 0.5px solid var(--slidev-theme-dark-divider);
     }
   }
 }

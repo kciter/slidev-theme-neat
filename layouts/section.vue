@@ -26,7 +26,6 @@ const props = defineProps({
     width: auto;
     height: auto;
     text-align: center;
-    color: var(--slidev-theme-text);
     margin: 0;
 
     &::before {
@@ -37,7 +36,7 @@ const props = defineProps({
       display: block;
       width: 40px;
       height: 1px;
-      background-color: var(--slidev-theme-text);
+      background-color: var(--slidev-theme-dark-text);
       margin-bottom: 1.2rem;
       transform: rotate(-30deg);
     }
@@ -50,7 +49,7 @@ const props = defineProps({
       display: block;
       width: 40px;
       height: 1px;
-      background-color: var(--slidev-theme-text);
+      background-color: var(--slidev-theme-dark-text);
       margin-bottom: 1.2rem;
       transform: rotate(-30deg);
     }

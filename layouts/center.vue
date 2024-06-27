@@ -1,27 +1,23 @@
 <template>
-  <default class="center">
-    <div class="container">
-      <slot />
+  <default class="center" :headerEnable="headerEnable">
+    <div class="h-full grid place-content-center text-center">
+      <div class="my-auto" v-bind:style="{ marginTop: headerEnable ? '-76px' : '0' }">
+        <slot />
+      </div>
     </div>
   </default>
 </template>
 
 <script setup>
 import Default from '../layouts/default.vue'
+
+const props = defineProps({
+  headerEnable: Boolean,
+});
 </script>
 
 <style>
 .slidev-layout.center {
-  .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
-    text-align: center;
-  }
-
   h1 {
     @apply text-4xl fw-700;
     color: var(--slidev-theme-text);

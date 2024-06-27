@@ -12,11 +12,15 @@
   --slidev-theme-light-divider: #8FA7CA70;
 
   /* dark theme color */
-  --slidev-theme-dark-background: #222;
+  --slidev-theme-dark-background: #000;
   --slidev-theme-dark-text: white;
   --slidev-theme-dark-accent: #40A0FC;
   --slidev-theme-dark-danger: #E96158;
-  --slidev-theme-dark-divider: #e2e4e8;
+  --slidev-theme-dark-divider: #c2c4c8;
+}
+
+#page-root {
+  font-family: "Gothic A1", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html:not(.dark) {
@@ -73,7 +77,7 @@ html.dark {
   background-color: #fff;
   color: var(--slidev-theme-text);
 
-  h1 {
+  h1, h2, h3, h4 {
     font-family: "Do Hyeon", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -86,6 +90,14 @@ html.dark {
   hr {
     border-width: 0.5px;
     border-color: var(--slidev-theme-border);
+  }
+
+  ul {
+    list-style-type: disc;
+
+    li::marker {
+      transform: translateY(-0.5em);
+    }
   }
 }
 
