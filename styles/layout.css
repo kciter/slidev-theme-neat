@@ -33,8 +33,7 @@ html:not(.dark) {
     }
   
     hr {
-      border-width: 0.5px;
-      border-color: var(--slidev-theme-light-divider);
+      background-color: var(--slidev-theme-light-divider);
     }
   }
 
@@ -58,7 +57,7 @@ html.dark {
     }
   
     hr {
-      border-color: var(--slidev-theme-dark-divider);
+      background-color: var(--slidev-theme-dark-divider);
     }
   }
 
@@ -75,7 +74,6 @@ html.dark {
 .slidev-layout {
   padding: 1.5rem 2.5rem;
   background-color: #fff;
-  color: var(--slidev-theme-text);
 
   h1, h2, h3, h4 {
     font-family: "Do Hyeon", sans-serif;
@@ -83,13 +81,10 @@ html.dark {
     font-style: normal;
   }
 
-  a:hover {
-    color: var(--slidev-theme-accent);
-  }
-
   hr {
-    border-width: 0.5px;
-    border-color: var(--slidev-theme-border);
+    margin: 20px 0 20px 0;
+    border: none;
+    height: 0.5px;
   }
 
   ul {

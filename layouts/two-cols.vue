@@ -1,5 +1,7 @@
 <template>
   <default class="two-cols">
+    <slot />
+    
     <div class="container">
       <div class="left">
         <slot name="left" />
