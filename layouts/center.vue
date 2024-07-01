@@ -16,7 +16,7 @@ const props = defineProps({
 });
 </script>
 
-<style>
+<style scoped>
 .slidev-layout.center {
   h1 {
     @apply text-4xl fw-700;
