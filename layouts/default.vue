@@ -66,7 +66,7 @@ const props = defineProps({
 
     img {
       display: block;
-      height: 0.6em;
+      height: 1em;
     }
   }
 
