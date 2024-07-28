@@ -22,6 +22,7 @@ subject: What is Slidev?
 layout: default
 headerEnable: true
 headerTitle: What is Slidev?
+headerLogo: https://sli.dev/logo.svg
 ---
 
 # What is Slidev?
@@ -78,11 +79,12 @@ Hover on the bottom-left corner to see the navigation's controls panel
 layout: two-cols
 headerEnable: true
 headerTitle: What is Slidev?
+image: https://cover.sli.dev
 ---
 
-# Code
+# Two Columns
 
-Use code snippets and get the highlighting directly!
+Left and right content layout
 
 ::left::
 
@@ -102,11 +104,101 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ::right::
-<Image src="https://cover.sli.dev" />
+
+```ts
+interface Post {
+  id: number
+  title: string
+  content: string
+}
+
+function updatePost(id: number, update: Partial<Post>) {
+  const post = getPost(id)
+  const newPost = { ...post, ...update }
+  savePost(id, newPost)
+}
+```
+
+---
+layout: image-right
+headerEnable: true
+headerTitle: What is Slidev?
+image: https://cover.sli.dev
+---
+
+# Image Right
+
+Right content layout with image on the left
+
+```ts
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = { ...user, ...update }
+  saveUser(id, newUser)
+}
+```
+
+---
+layout: image-left
+headerEnable: true
+headerTitle: What is Slidev?
+image: https://cover.sli.dev
+---
+
+# Image Left
+
+Left content layout with image on the right
+
+```ts
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = { ...user, ...update }
+  saveUser(id, newUser)
+}
+```
+
+---
+layout: image
+headerEnable: true
+headerTitle: What is Slidev?
+image: https://cover.sli.dev
+---
+
+# Image
+
+Full-width image layout
+
+```ts
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = { ...user, ...update }
+  saveUser(id, newUser)
+}
+```
 
 ---
 layout: center
-class: "text-center"
 ---
 
 # Learn More
