@@ -36,7 +36,7 @@ const props = defineProps({
       display: block;
       width: 40px;
       height: 1px;
-      background-color: var(--slidev-theme-dark-text);
+      background-color: var(--slidev-theme-light-text);
       margin-bottom: 1.2rem;
       transform: rotate(-30deg);
     }
@@ -49,9 +49,22 @@ const props = defineProps({
       display: block;
       width: 40px;
       height: 1px;
-      background-color: var(--slidev-theme-dark-text);
+      background-color: var(--slidev-theme-light-text);
       margin-bottom: 1.2rem;
       transform: rotate(-30deg);
+    }
+  }
+}
+.dark {
+  .slidev-layout.section {
+    .title {
+      &::before {
+        background-color: var(--slidev-theme-dark-text);
+      }
+
+      &::after {
+        background-color: var(--slidev-theme-dark-text);
+      }
     }
   }
 }
