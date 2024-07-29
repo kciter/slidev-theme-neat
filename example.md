@@ -1,17 +1,13 @@
 ---
 theme: ./
 layout: cover
+# colorSchema: light
+coverLogo: https://sli.dev/logo.svg
+coverTitle: Slidev Neat Theme
+coverAuthor: 이선협 @kciter
 ---
 
-# Slidev Theme Starter
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
+Let's start with Slidev!
 
 ---
 layout: section
@@ -57,6 +53,10 @@ Slidev is a slides maker and presenter designed for developers, consist of the f
 Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 ---
+headerEnable: true
+headerTitle: What is Slidev?
+colorSchema: light
+---
 
 # Navigation
 
@@ -73,6 +73,8 @@ Hover on the bottom-left corner to see the navigation's controls panel
 
 ---
 layout: two-cols
+headerEnable: true
+headerTitle: What is Slidev?
 image: https://cover.sli.dev
 ---
 
@@ -81,6 +83,7 @@ image: https://cover.sli.dev
 Left and right content layout
 
 ::left::
+
 ```ts
 interface User {
   id: number
@@ -97,6 +100,7 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ::right::
+
 ```ts
 interface Post {
   id: number
@@ -165,8 +169,6 @@ function updateUser(id: number, update: Partial<User>) {
 
 ---
 layout: image
-headerEnable: true
-headerTitle: What is Slidev?
 image: https://cover.sli.dev
 ---
 
