@@ -22,7 +22,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style>
 .slidev-layout.image-left {
   @apply h-full;
 
@@ -53,45 +53,45 @@ const props = defineProps({
     @apply text-sm;
     line-height: 1;
   }
-}
 
-.image {
-  @apply h-full;
-  flex: 1;
-  max-width: 50%;
-}
-
-.image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content {
-  @apply h-full;
-  flex: 1;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 24px;
-  margin-bottom: 1.2rem;
-  border-bottom: 0.5px solid var(--slidev-theme-light-divider);
-
-  p {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 0.7rem;
-    font-weight: bold;
+  .image {
+    @apply h-full;
+    flex: 1;
+    max-width: 50%;
   }
 
-  img {
-    display: block;
-    height: 0.6em;
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    @apply h-full;
+    flex: 1;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 1.2rem;
+    border-bottom: 0.5px solid var(--slidev-theme-light-divider);
+
+    p {
+      display: block;
+      margin: 0;
+      padding: 0;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+
+    img {
+      display: block;
+      height: 0.6em;
+    }
   }
 }
 

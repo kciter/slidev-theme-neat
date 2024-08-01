@@ -17,7 +17,7 @@
 import Default from '../layouts/default.vue'
 </script>
 
-<style scoped>
+<style>
 .slidev-layout.two-cols {
   .container {
     display: flex;

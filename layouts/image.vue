@@ -18,7 +18,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style>
 .slidev-layout.image {
   .background {
     position: absolute;

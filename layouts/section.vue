@@ -14,7 +14,7 @@ const props = defineProps({
 });
 </script>
 
-<style scoped>
+<style>
 .slidev-layout.section {
   .title {
     @apply text-4xl fw-700;
